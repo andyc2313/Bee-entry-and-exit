@@ -90,22 +90,6 @@ python main.py --video data/hive_video.mp4 --model weights/bee_model.pt --conf 0
 5. Analysis of bee movements to count entries and exits ➡️⬅️
 6. Visualization of results 📊🎨
 
-## Code Structure 🧑‍💻
-
-```
-bee-tracking/
-├── main.py              # Main script for running the system 🎬
-├── bee_detector.py      # YOLOv8 integration for bee detection 🐝🔍
-├── bee_tracker.py       # Contains IDSwitchPreventer and tracking logic 🆔⚙️
-├── bee_counter.py       # Logic for counting bee entries and exits 🔢➡️⬅️
-├── visualization.py     # Utilities for visualization 🖼️
-├── config.py            # Configuration parameters ⚙️
-├── utils.py             # Helper functions 🛠️
-├── weights/             # Folder for model weights 🎯
-│   └── best.pt          # Trained YOLOv8 bee detection model 🐝🎯
-└── data/                # Example videos and test data 🎥
-```
-
 ## Algorithm Details 🔍
 
 ### ID Switch Prevention 🚫🔄
