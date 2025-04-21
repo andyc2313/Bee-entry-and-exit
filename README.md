@@ -16,8 +16,8 @@ This repository contains a computer vision-based system for tracking and countin
 - **Real-time bee detection** using a trained YOLOv8 model optimized for honeybees 🐝
 - **Custom tracking algorithm** to prevent ID switching 🚫🔄 and maintain consistent identities
 - **Entry/exit counting logic** based on movement trajectories and appearance changes 🔄➡️⬅️
-- **Visualization tools** for displaying tracking results and counts 📹🎨
-- **Region of Interest (ROI)** based filtering to focus on the beehive entrance 🚪🐝
+- **Visualization tools** for displaying tracking results and counts 
+- **Region of Interest (ROI)** based filtering to focus on the beehive entrance 
 
 ## Requirements 📋
 
@@ -47,7 +47,7 @@ This repository contains a computer vision-based system for tracking and countin
    pip install -r requirements.txt
    ```
 
-4. Download the pre-trained YOLOv8 model or train your own (see [Training](#training) section). 🧑‍🏫
+4. Download the pre-trained YOLOv8 model or train your own (see [Training](#training) section). 
 
 ## Usage 🎬
 
@@ -78,10 +78,10 @@ python main.py --video data/hive_video.mp4 --model weights/bee_model.pt --conf 0
 
 ### Components
 
-1. **YOLOv8 Detector**: Identifies bees in each frame 🐝🔍
-2. **IDSwitchPreventer**: Maintains consistent bee identities using spatial and appearance cues 🆔🚫
-3. **BeeCounter**: Analyzes trajectories to count entrance and exit events 🔢➡️⬅️
-4. **Visualization Module**: Creates visual feedback of tracking results 🖼️
+1. **YOLOv8 Detector**: Identifies bees in each frame 
+2. **IDSwitchPreventer**: Maintains consistent bee identities using spatial and appearance cues 
+3. **BeeCounter**: Analyzes trajectories to count entrance and exit events 
+4. **Visualization Module**: Creates visual feedback of tracking results 
 
 ### Workflow
 
@@ -119,7 +119,7 @@ The system uses a custom algorithm to prevent ID switching, maintaining consiste
 3. **Appearance modeling**: Considers size changes 🔲↔️
 4. **Lost track recovery**: Re-identifies bees that temporarily disappear 🔄
 
-### Entry/Exit Counting Logic 🔢➡️⬅️
+### Entry/Exit Counting Logic 
 
 Bees are counted based on:
 
@@ -127,37 +127,3 @@ Bees are counted based on:
 2. **Position relative to ROI**: Entry to specified regions 🗺️
 3. **Size changes**: Expansion/contraction of detected bounding boxes 📏
 4. **Appearance duration**: Time spent in tracking ⏳
-
-## Training 🏋️‍♀️
-
-### Training a Custom Model 🧑‍🏫
-
-To train the YOLOv8 model on your own bee dataset:
-
-1. Prepare your dataset in YOLOv8 format
-2. Train the model:
-   ```bash
-   python train.py --data dataset.yaml --epochs 100 --imgsz 640
-   ```
-
-### Dataset Format 📂
-
-The dataset should follow the YOLOv8 format:
-- images/train/: Training images 🖼️
-- images/val/: Validation images 🖼️
-- labels/train/: Training labels (YOLO format) 🏷️
-- labels/val/: Validation labels (YOLO format) 🏷️
-- dataset.yaml: Dataset configuration file 📝
-
-## Performance Optimization ⚡
-
-Tips for improving performance:
-
-- **GPU acceleration**: Ensure CUDA is properly set up for YOLOv8 💻⚡
-- **Resolution adjustment**: Lower resolution for faster processing 📏
-- **ROI filtering**: Narrow the ROI to focus only on critical areas 🗺️
-- **Confidence threshold**: Adjust the confidence threshold based on lighting conditions 🌞
-
----
-
-Feel free to let me know if you'd like any further customization! 😊
