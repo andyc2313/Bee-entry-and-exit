@@ -1,8 +1,6 @@
 # Bee Tracking and Counting System
 Bee Tracking Demo （https://youtu.be/IL1JaYVnD24）
 
-Here's an updated version of your README with added text-based emoticons for better visual engagement:
-
 ---
 
 # Bee Tracking and Counting System 🐝📊
