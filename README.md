@@ -33,7 +33,7 @@ This repository contains a computer vision-based system for tracking and countin
    git@github.com:andyc2313/Image-recognition-of-bees-entering-and-exiting.git
    ```
 
-2. Create a conda environment (optional but recommended):
+2. Create a conda environment:
    ```bash
    conda create -n bee-tracking python=3.8
    conda activate bee-tracking
