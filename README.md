@@ -44,7 +44,7 @@ This repository contains a computer vision-based system for tracking and countin
    pip install -r requirements.txt
    ```
 
-4. Download the pre-trained YOLOv8 model or train your own (see [Training](#training) section). 
+4. Download the pre-trained YOLOv8 model or train your own. 
 
 ## Usage 🎬
 
