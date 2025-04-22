@@ -30,8 +30,7 @@ This repository contains a computer vision-based system for tracking and countin
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/bee-tracking.git
-   cd bee-tracking
+   git@github.com:andyc2313/Image-recognition-of-bees-entering-and-exiting.git
    ```
 
 2. Create a conda environment (optional but recommended):
